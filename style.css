@@ -28,8 +28,6 @@
 body {
     background-color: #101319;
     transition: 0.5s;
-    background-image: url(./assets/background4.avif);
-    background-size: cover;
     
 }
 
@@ -44,9 +42,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .lightMode {
-    background-image: url(./assets/background-light.avif);
-    background-size: cover;
-    background-color: #e8e9ff;
+   background-color: #e8e9ff;
 }
 
 .lightMode .text-dark {
@@ -192,26 +188,13 @@ header {
 
 
 .main {
-    display: grid;
-    grid-template-areas: 
-    "div1 div2"
-    "div1 div3";
-    
-    background-color: rgba(255, 255, 255, 0.00);
-    backdrop-filter: blur(100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-top: 50px;
-   
-    gap: 10px;
-
-    grid-template-rows: 200px 200px;
 }
 
 
-.div1 {
-
-    grid-area: div1;
-   
-}
 
 .teste {
     display: flex;
@@ -237,16 +220,7 @@ header {
     }
 }
 
-.div2 {
-    grid-area: div2;
-}
 
-.div3 {
-    display: flex;
-    justify-content: end;
-    grid-area: div3;
-    overflow: hidden;
-}
 
 .img-jogo {
     display: flex;
