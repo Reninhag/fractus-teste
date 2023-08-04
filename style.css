@@ -21,6 +21,9 @@
     --tamanho-fonte: 1.05rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .links {
     color: var(--color-dark);
 }
