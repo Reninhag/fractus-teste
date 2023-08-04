@@ -17,7 +17,7 @@
 
 let showorhide = document.querySelector('#btn');
 let hide = document.querySelector('#btn-fechar');
-let sideBar = document.querySelector('.nav-bar');
+let sideBar = document.querySelector('.navegacao');
 
 function abrir(){
     sideBar.classList.add('abrir')
