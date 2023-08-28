@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #101319;
+    transition: 0.5s;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 7px;
+    background: linear-gradient(to right, #ff80b6, #c795ff, #58a0ff);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 5);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+}
+
+.box-link-header {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+}
+
+.link-header {
+    position: relative;
+    overflow: hidden;
+    margin-left: 30px;
+    padding: 10px;
+    color: #323232;
+}
+
+.content-inp-header {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 7px 10px;
+    border: 0;
+    width: 200px;
+    margin-left: 5px;
+    border-radius: 7px;
+    color: #000;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2),
+        inset 3px 3px 5px rgba(0, 0, 0, .1);
+}
+
+.search {
+    position: relative;
+    left: -35px;
+}
+
+.lupa {
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%);
+    background-color: #000;
+}
+
+main {
+    display: flex;
+    margin-top: 70px;
+    background-color: #252525;
+    height: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.img-principal img {
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.texto-informativo-new {
+    text-align: justify;
+    padding: 30px;
+    color: #fff;
+}
+
+.texto-informativo-new h1, p {
+    margin-bottom: 30px;
+}
+
+.topicos {
+    font-weight: 800;
+}
+
+.texto-informativo-new button {
+    background-color: #58a0ff;
+    width: 100px;
+    padding: 5px;
+    border: 0;
+}
+
+section {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.section {
+    border-radius: 5px;
+    background-color: #252525;
+    height: 500px;
+}
+
+.section-1 {
+    width: 60%;
+}
+
+.section-2 {
+    width: 40%;
+}
+
+.box-titulo {
+    background-color: #323232;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2),
+    -3px 3px 5px rgba(0, 0, 0, .2),
+    inset 3px 3px 5px rgba(255, 255, 255, .03),
+    inset -3px 3px 5px rgba(255, 255, 255, .03);
+}
