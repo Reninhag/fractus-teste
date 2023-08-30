@@ -6,30 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/66cb621fdc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Fractus | Sua comunidade de jogos</title>
 </head>
 
 <body>
 
     <header>
-        <button class="login" id="btn">
-            <i class="fa-solid fa-bars fa-xl btn-nav"></i>
-        </button>
+        <div class="divlogin">
+            <button class="login" id="btn">
+                <i class="fa-solid fa-bars fa-xl btn-nav"></i>
+            </button>
+        </div>
         <nav class="nave">
             <ul>
-                <li class="Item"><a href="#d1" class="a">Item 1</a></li>
-                <li class="Item"><a href="#div2" class="a">Item 2</a></li>
-                <li class="Item"><a href="#div3" class="a">Item 3</a></li>
+                <li class="Item"><a href="#d1" class="a">Sobre Nos</a></li>
+                <li class="Item"><a href="#div2" class="a">Comunidade</a></li>
+                <li class="Item"><a href="#div3" class="a">Faça Parte</a></li>
             </ul>
         </nav>
-        <div class="frog">
+        <!-- <div class="frog">
             <div class="box-perfil">
                 <img src="./assets/pessoa-aleatória.jpg" alt="" class="perfil">
             </div>
             <button id="btn-abrir">
                 <i class="fa-solid fa-chevron-down"></i>
             </button>
-        </div>
+        </div> -->
 
         <!-- <div id="menu-p" class="menu-perfil">
                     <li class="link-perfil">
@@ -58,7 +62,7 @@
                         </a>            
                     </li>
                 </div> -->
-        </nav>
+
     </header>
     <nav class="navegacao">
         <span class="logo-nav">
@@ -160,62 +164,51 @@
     </main>
 
     <div id="d1" class="section-1">
-        <h1 class="titlediv1">Item 1</h1>
+        <h1 class="titlediv1">Sobre o Fractus</h1>
         <div class="divp1">
-            <p class="pdiv1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, aperiam iure. Iure expedita
-                doloremque
-                recusandae vel, laboriosam atque veniam dicta excepturi quibusdam. Totam accusamus necessitatibus cum
-                rem
-                soluta illum doloremque ea quis ullam asperiores nulla impedit amet modi, doloribus porro distinctio
-                harum
-                voluptatem. Ullam, explicabo, facere asperiores, ratione recusandae rem earum excepturi suscipit ab ut
-                ipsam
-                eum dolor accusamus eius quam velit nostrum reiciendis possimus illo aliquid quas. Quod, voluptates?
+            <p class="pdiv">
+                Com o <strong>Fractus</strong> você pode ver as principais notícias do mundo dos games, Avaliar jogos do
+                seu cotidiano, Conversar em nossos chats sobre seus jogos favoritos e Muito mais!
             </p>
             <img src="flip.png" alt="img">
         </div>
     </div>
 
     <div id="div2" class="section2">
-        <h1 class="title-div2">Item2</h1>
+        <h1 class="title-div2">Comunidade</h1>
         <div class="divp2">
-            <p class=" p-div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis neque omnis
-                laboriosam aspernatur rerum totam earum, ipsum ea corporis, provident aut. Impedit perspiciatis nihil
-                quam
-                ab enim atque odit architecto officia quibusdam illo quas facere similique sed, quia accusantium
-                voluptatibus aperiam dolor qui aspernatur! Ullam, asperiores omnis. Quo hic quae quis neque vero est!
-                Qui,
-                iusto? Maxime ex numquam harum!</p>
+            <p class=" pdiv">Participe de uma comunidade ativa e organizada que esta sempre por dentro das novidades.
+            </p>
             <img src="flip.png" alt="img" height="300px" width="300px">
         </div>
     </div>
     <div id="div3" class="section3">
-        <h1 class="title-div3">Item3</h1>
+        <h1 class="title-div3">Faça Parte</h1>
         <div class="divp3">
-            <p class="p-div3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet itaque tempore
-                perferendis
-                facilis excepturi soluta non. A nobis veritatis perspiciatis quisquam maiores. Odio esse aut sequi quam
-                eius
-                ut molestias, explicabo totam voluptatibus porro repudiandae maiores perferendis impedit odit enim.
-                Alias
-                temporibus nostrum ipsum obcaecati. </p>
-                <img src="flip.png" alt="img" height="300px" width="300px">
-                
-                </div>
-                </div>
-                
-                <footer>
-                    <p class="pfooter">© 2023 - Alice Jacob<br>Guilherme Tavares<br>Alessandra Ferreira<br>Johnny Rabelo </p>
-                    <form action="form.php" method="post">
-                        <h1 class="title-form">Receber as novidades</h1>
-                        <input class="inputs" type="text" placeholder="Nome Completo" min="8" required size="15" S>
-                        <input class="inputs" type="email" placeholder="Email" required autocomplete="name" size="15">
-                        <input class="enviar" type="submit">
-                    </form>
-                </footer>
-                
-                <script src="./script.js"></script>
-                </body>
-                
-                </html>
+            <p class="pdiv">Faça parte de nós! Cadastre-se no Fractus e entre para nossa comunidade!</p>
+            <img src="flip.png" alt="img" height="300px" width="300px">
+
+        </div>
+    </div>
+
+    <footer>
+        <form action="form.php" method="post">
+            <div class="divinput">
+                <label class="title-form" for="email">Receba as novidades!</label>
+                <input class="inputs" id="email" class='validate' type="email" placeholder="Email" autocomplete="name"
+                    size="15">
+                <input class="enviar" id='validate' type="submit">
+            </div>
+        </form>
+        <h2 id='result'></h2>
+        <p class="pfooter">© 2023 - Alice Jacob<br>Guilherme Tavares<br>Alessandra Ferreira<br>Johnny Rabelo </p>
+
+
+
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
