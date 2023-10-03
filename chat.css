@@ -1,24 +1,23 @@
 *{
-
     margin: 0;
-
     padding: 0;
-
 }
 
-body{
+body {
 
  
 
 }
-.main{
+
+.main {
     display: flex;
     flex-direction: row;
     height: 100vh;
     justify-content: space-between;
 
 }
-.chat-top{
+
+.chat-top {
     text-align: center;
     color: white;
     background-color: rgb(49, 49, 49);
@@ -28,10 +27,12 @@ body{
     justify-content: center;
 
 }
-.top-title{
+
+.top-title {
    
 }
-.chat-main{
+
+.chat-main {
     background-color: rgb(58, 56, 56);
     height: auto;
     display: flex;
@@ -41,46 +42,38 @@ body{
     flex-direction: row;
     align-items: flex-end;
     justify-content: center ;
-
 }
 
-.div-left{
-
+.div-left {
     width: 200px;
     display: flex;
     background-color: rgb(44, 44, 44);
 }
-.imgs{
+
+.imgs {
     margin: 10px;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
 }
-.img{
+
+.img {
     border-radius: 50%;
 }
-.div-right{
+
+.div-right {
     padding: 10px 0;
     background-color: rgb(40, 40, 43);
-
     height: 100vh;
-
     width: 300px;
-
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
-
     justify-content: center;
-
     align-items: center;
-
 }
 
-.user-friends{
-
+.user-friends {
     display: flex;
     justify-content: space-around;
     width: 180px;
@@ -89,18 +82,39 @@ body{
     height: 45px;
     border-radius: 2px;
     color: white;
-
 }
-.user-friends:hover{
+
+.user-friends:hover {
     background-color: rgb(45, 45, 45);
     cursor: pointer;
 }
-.text{
+
+.text {
     background-color: rgb(58, 56, 56);
     width: 100%;
     height: 80px;
     z-index: -6;
     display: flex;
     justify-self: center;
-    
+}
+
+.point {
+    animation-name: bolinha;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes bolinha {
+    0% {
+        opacity: 50%;
+    }
+
+    50% {
+        opacity: 60%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
