@@ -184,7 +184,7 @@ z-index: 19;*/
 
 #btn,
 #btn-fechar {
-    color: var(--color-dark);
+    color: #fff;
     background: transparent;
     border: none;
     padding: 5px;
