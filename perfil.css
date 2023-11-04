@@ -13,11 +13,17 @@
     --color-dark: #0a0b0c;
     --color-font-dark: #383838;
     --color-font: #f5f5f5; /*#f5f7f9*/
+    --color-font: #f5f5f5; /*#f5f7f9*/
+    --color-font: #f5f5f5; /*#f5f7f9*/
+    --color-font: #f5f5f5; /*#f5f7f9*/
     --color-green: #12de94;
     --color-pink: #ff1493;
     --color-principal-1-light: #ff80b6;
     --color-principal-1: #ff3c90;
     --color-principal-2-light: #c795ff;
+    --color-principal-2: #824cfb; /*#824cfb #a352ff*/
+    --color-principal-2: #824cfb; /*#824cfb #a352ff*/
+    --color-principal-2: #824cfb; /*#824cfb #a352ff*/
     --color-principal-2: #824cfb; /*#824cfb #a352ff*/
     --color-principal-3-light: #58a0ff;
     --color-principal-3: #2986ff;
@@ -26,7 +32,7 @@
 }
 
 body {
-    overflow: hidden;
+/*Box model stuff*/
     background-color: #2d2d2d;
 }
 
@@ -44,10 +50,7 @@ body {
 /*Display stuff*/
     display: grid;
     grid-auto-rows: 33.33vh;
-    grid-template-areas:     
-    "sidebar poster       poster       poster       poster       poster"
-    "sidebar pt-principal pt-principal pt-principal pt-principal pt-principal"
-    "sidebar pt-principal pt-principal pt-principal pt-principal pt-principal";
+    grid-template-areas:         "sidebar poster       poster       poster       poster       poster"    "sidebar pt-principal pt-principal pt-principal pt-principal pt-principal"    "sidebar pt-principal pt-principal pt-principal pt-principal pt-principal";
     grid-template-columns: repeat(6 , 1fr);
 }
 
@@ -70,9 +73,10 @@ body {
 /*Box model stuff*/
     border-radius: 16px;
     background-color: #3d3d3d;
+/*Manipulations stuff*/
+    transition: 0.6s;
 /*Miscellaneous*/
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-    transition: 0.6s;
     overflow: hidden;
 }
 
@@ -80,10 +84,7 @@ body {
 /*Display stuff*/
     display: grid;
     grid-auto-rows: minmax(80px, 150px);
-    grid-template-areas:   
-    "perfil perfil  bio     bio     bio     amigos amigos amigos"
-    "perfil perfil  ranking ranking ranking amigos amigos amigos"  
-    "perfil perfil  ranking ranking ranking amigos amigos amigos";
+    grid-template-areas:       "perfil perfil  bio     bio     bio     amigos amigos amigos"    "perfil perfil  ranking ranking ranking amigos amigos amigos"      "perfil perfil  ranking ranking ranking amigos amigos amigos";
     grid-template-columns: repeat(7, 1fr);
 /*Box model stuff*/
     margin: 15px;
@@ -128,43 +129,55 @@ body {
 }
 
 ul{
+/*Display stuff*/
     display: flex;
 }
 .Item{
+/*Box model stuff*/
   margin-left: 200px; 
+/*Typography stuff*/
   font-size: 20px;
 }
 
 .a {
+/*Positioning stuff*/
     position: relative;
-    color: #fff;
+/*Typography stuff*/
     text-decoration: none;  
+    color: #fff;  
    
   }
   
 .a::after {
+/*Display stuff*/
     content: "";
+/*Positioning stuff*/
     position: absolute;
+    left: 0;
+    bottom: 0;
+/*Box model stuff*/
     width: 0%;
     height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    transition: 0.4s ease-in-out 0s;
     border-radius: 1px;
+    background-color: #fff;
+/*Manipulations stuff*/
+    transition: 0.4s ease-in-out 0s;
   }
   
 .a:hover::after {
+/*Box model stuff*/
     width: 100%;
    
 }
 
 
 .lightMode {
+/*Box model stuff*/
    background-color: #e8e9ff;
 }
 
 .lightMode .text-dark{
+/*Typography stuff*/
     color: var(--color-font-dark);
 }
 
@@ -180,107 +193,137 @@ background: linear-gradient(to right, var(--color-principal-1), var(--color-prin
 z-index: 19;*/
 
 .lightMode header {
+/*Box model stuff*/
     background: linear-gradient(to right, var(--color-principal-1-light), var(--color-principal-2-light), var(--color-principal-3-light));
 }
 
 .navegacao {
+/*Box model stuff*/
     padding: 20px 10px 20px 20px;
     background-color: #212121;
 }
 
 .lightMode .navegacao {
+/*Box model stuff*/
     background-color: #f9f9f9;
 }
 .lightMode .text-dark{
+/*Typography stuff*/
     color: #080808;
 }
 
 
 .logo-nav {
+/*Display stuff*/
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 .logo-nav h2 {
+/*Box model stuff*/
     margin: 20px 5px;
+/*Typography stuff*/
     color: var(--color-font);
 }
 
 
 .logo-nav {
+/*Display stuff*/
     display: flex;
-    margin-right: 5px;
     justify-content: space-between;
+/*Box model stuff*/
+    margin-right: 5px;
 }
 
 .flake {
+/*Typography stuff*/
     color: var(--color-principal-2);
 }
 
 .items {
+/*Display stuff*/
     display: flex;
     align-content: center;
     align-items: center;
     justify-items: center;
+/*Box model stuff*/
     margin-bottom: 5px;
     padding: 8px 0 8px 12px;
+/*Typography stuff*/
     font-size: var(--tamanho-fonte);
     color: var(--color-font);
 }
 
 .items-arrow{
+/*Display stuff*/
     justify-content: space-between;
 }
 
 .items i {
+/*Box model stuff*/
     margin-right: 10px;
 }
 
 .items::before{
+/*Display stuff*/
     content: "";
+/*Positioning stuff*/
     position: absolute;
-    background-color: transparent;
+    left: 1px;
+/*Box model stuff*/
     width: 4px;
     height: 40px;
-    left: 1px;
     border-radius: 2px;
+    background-color: transparent;
 }
 
 .items:hover {
+/*Typography stuff*/
     color: var(--color-font);
 }
 
 .items:hover::before {
-    background-color: var(--color-principal-2);
+/*Box model stuff*/
     border-radius: 8px;
+    background-color: var(--color-principal-2);
+/*Miscellaneous*/
     box-shadow: 5px 5px 20px rgba(163, 82, 255, 0.5);
 }
 
 .lightMode .items:hover{
+/*Typography stuff*/
     color: var(--color-font-dark);
 }
 
 .lightMode .items:hover::before {
-    background-color: var(--color-principal-1-light);
+/*Box model stuff*/
     border-radius: 8px;
+    background-color: var(--color-principal-1-light);
+/*Miscellaneous*/
     box-shadow: 5px 5px 20px rgb(255, 128, 182);
 }
 
 .action {
+/*Display stuff*/
     display: flex;
     align-items: center;
+/*Box model stuff*/
+    width: 240px;
+/*Typography stuff*/
+    color: #000;
+/*Miscellaneous*/
     user-select: none;
     cursor: pointer;
-    color: #000;
-    width: 240px;
 }
 
 .action input {
+/*Miscellaneous*/
     appearance: none;
 }
 
 .action i, p {
+/*Typography stuff*/
     color: var(--color-font);
 }
 
@@ -317,9 +360,10 @@ z-index: 19;*/
     display: flex;
     flex-direction: column;
     align-items: center;
+/*Box model stuff*/
+    height: 540px;
 /*Typography stuff*/
     color: #fff;
-    height: 540px;
 }
 
 .foto-de-perfil {
@@ -336,17 +380,21 @@ z-index: 19;*/
 }
 
 #nomeDoUsuario {
+/*Box model stuff*/
+    margin-top: 8px;
 /*Typography stuff*/
     font-size: 1.875em;
     font-weight: 300;
-    margin-top: 8px;
 }
 
 .redes-sociais {
+/*Display stuff*/
     display: flex;
     justify-content: space-around;
-    gap: 12px;
+/*Box model stuff*/
     margin-top: 20px;
+/*Miscellaneous*/
+    gap: 12px;
 }
 
 
@@ -369,9 +417,9 @@ z-index: 19;*/
 
 .box-info > h2{
 /*Typography stuff*/
+    font-size: 1.4em;
     font-weight: 500;
     color: #ff3c90;
-    font-size: 1.4em;
 }
 
 hr  {
@@ -389,17 +437,18 @@ hr  {
 }
 
 .btn-perfil {
-/*Box model stuff*/
+/*Display stuff*/
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+/*Box model stuff*/
     width: 100px;
     margin-left: 10px;
     padding: 7px;
     border: none;
+    border: 1px solid var(--color-principal-3);
     border-radius: 6px;
     background-color: var(--color-principal-3);
-    border: 1px solid var(--color-principal-3);
 /*Typography stuff*/
     color: #f5f5f5;
 /*Miscellaneous*/
@@ -432,8 +481,8 @@ hr  {
 
 .title-areas {
 /*Typography stuff*/
-    font-weight: 500;
     font-size: 1.5em;
+    font-weight: 500;
     color: #f5f5f5;
 }
 
@@ -479,6 +528,7 @@ hr  {
 }
 
 textarea::-webkit-scrollbar {
+/*Box model stuff*/
     background-color: transparent;
 }
 
@@ -494,7 +544,74 @@ textarea::-webkit-scrollbar {
 
 
 .amigos {
-    /*Display stuff*/
+/*Display stuff*/
     grid-area: amigos;
 }
 
+.ctn-amigos {
+/*Display stuff*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/*Box model stuff*/
+    height: 100%;
+    overflow: scroll;
+}
+
+.ctn-amigos::-webkit-scrollbar{
+/*Box model stuff*/
+    width: 5px;
+    background-color: var(--color-principal-1-light);
+}  
+
+.box-amigos {
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+/*Box model stuff*/
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #4a4a4a;
+}
+
+.foto-perfil-amigos {
+/*Box model stuff*/
+    width: 55px;
+    height: 55px;
+    margin-left: 10px;
+    border-radius: 50%;
+    background-color: #5a5a5a;
+    background-image: url(./assets/user2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ctn-amigos:nth-child(1){
+/*Box model stuff*/
+    margin-top: 30px;
+}
+
+.box-amigos:nth-last-child(-n+1) {
+    margin-bottom: 30px;
+}
+
+.box-amigos > p {
+/*Typography stuff*/
+    font-size: 1.1em;
+}
+
+.status-amigo {
+/*Box model stuff*/
+    margin-left: 20px;
+}
+
+.situacao-amigo > i {
+/*Box model stuff*/
+    margin-right: 4px;
+}
+.situacao-amigo {
+/*Typography stuff*/
+    font-size: 0.7em;
+}
