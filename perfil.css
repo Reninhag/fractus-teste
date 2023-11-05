@@ -625,3 +625,69 @@ textarea::-webkit-scrollbar {
 /*Typography stuff*/
     font-size: 0.7em;
 }
+
+table {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    border-collapse: collapse;
+}
+
+tbody {
+    overflow: scroll;
+}
+
+.tr{
+    height: 20px;
+}
+
+tbody > .tr:first-child{
+    font-weight: 700; 
+    border-bottom: 4px solid #daa520;
+}
+
+tbody > .tr:nth-child(2){
+    font-weight: 700;
+    border-bottom: 4px solid #c0c0c0;
+}
+
+tbody > .tr:nth-child(3){
+    font-weight: 700;
+    border-bottom: 4px solid #cd7f32;
+}
+
+tbody >.tr:hover {
+    background-color: rgba(255, 128, 183, 0.5);
+}
+
+
+.tr:nth-child(even){
+    background-color: #5a5a5a;
+}
+
+.tr:nth-child(odd){
+    background-color: #666666;
+}
+
+
+thead{
+  background-color: #333;
+  color: #fff;
+  height: 40px;
+}
+
+.item-tb {
+    color: #f3f3f3;
+}
+
+.n-rank {
+    text-align: center;
+}
+
+.n-rank::before {
+    content: "#";
+}
+
+#thead{
+    background-color: #191c22;
+}
