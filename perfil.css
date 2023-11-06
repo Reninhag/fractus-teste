@@ -349,7 +349,7 @@ z-index: 19;*/
 
 .poster {
 /*Box model stuff*/
-   background-image: url(./assets/poster2.jpg);
+   background-image: url(./assets/banner2.jpg);
    background-repeat: no-repeat;
    background-size: cover;
 }
