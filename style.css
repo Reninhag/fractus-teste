@@ -99,9 +99,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #e8e9ff;
 }
 
-.lightMode .text-dark {
-    color: var(--color-font-dark);
-}
 
 /*position: fixed;
 top: 0;
@@ -114,9 +111,6 @@ padding: 0 20px;
 background: linear-gradient(to right, var(--color-principal-1), var(--color-principal-2), var(--color-principal-3));
 z-index: 19;*/
 
-.lightMode header {
-    background: linear-gradient(to right, var(--color-principal-1-light), var(--color-principal-2-light), var(--color-principal-3-light));
-}
 
 .imagem {
     padding-top: 30px;
@@ -137,13 +131,7 @@ z-index: 19;*/
     z-index: 20;
 }
 
-.lightMode .navegacao {
-    background-color: #f9f9f9;
-}
 
-.lightMode .text-dark {
-    color: #080808;
-}
 
 .abrir {
     transform: translate(0px);
@@ -223,15 +211,6 @@ z-index: 19;*/
     box-shadow: 5px 5px 20px rgba(163, 82, 255, 0.5);
 }
 
-.lightMode .items:hover {
-    color: var(--color-font-dark);
-}
-
-.lightMode .items:hover::before {
-    background-color: var(--color-principal-1-light);
-    border-radius: 8px;
-    box-shadow: 5px 5px 20px rgb(255, 128, 182);
-}
 
 .action {
     display: flex;
