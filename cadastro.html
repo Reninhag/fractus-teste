@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastrostyle.css">
+    <title>3243</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="container2">
+        <form action="">
+          <h1 class="h1">Cadastre-se</h1>
+          <div class="parent">
+            <div class="section1">
+              <label for="name"
+                ><iconify-icon
+                  class="icon"
+                  icon="ph:pencil-simple"
+                  style="color: white"
+                ></iconify-icon
+              ></label>
+              <label for="email"
+                ><iconify-icon
+                  class="icon"
+                  icon="icon-park-solid:people"
+                  style="color: white"
+                ></iconify-icon
+              ></label>
+              <label for="password"
+                ><iconify-icon
+                  class="icon"
+                  icon="streamline:padlock-square-1-solid"
+                  style="color: white"
+                ></iconify-icon
+              ></label>
+              <label for="confirmpassword"
+                ><iconify-icon
+                  class="icon"
+                  icon="streamline:padlock-square-1-solid"
+                  style="color: white"
+                ></iconify-icon
+              ></label>
+            </div>
+            <div class="section2">
+              <input type="text" name="name" id="name" placeholder="Username" />
+              <input type="email" name="email" id="email" placeholder="E-mail" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Senha"
+              />
+              <input
+                type="password"
+                name="confirmpassword"
+                id="confirmpassword"
+                placeholder="Confirmar senha"
+              />
+            </div>
+          </div>
+          <div class="toge">
+            <input class="check" type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >Li e aceito os <span>Termos de Uso</span></label>
+          </div>
+          <button class="btn" onclick="Validar()">
+            <p>Enviar</p>
+          </button>
+        </form>
+      </section>
+      <p class="phref">Já possui uma conta? <a href="login.html"> <span> faça login</span></a></p>
+    </div>
+    <script src="scriptcadastro.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>
