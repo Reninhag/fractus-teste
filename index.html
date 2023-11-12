@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/66cb621fdc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/resetvar.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Fractus | Sua comunidade de jogos</title>
@@ -64,6 +65,7 @@
                 </div> -->
 
     </header>
+
     <nav class="navegacao">
         <span class="logo-nav">
             <span>
@@ -105,7 +107,7 @@
                 Loja
             </a>
 
-            <a href="./news.html" class="items text-dark items-arrow">
+            <a href="#" class="items text-dark items-arrow">
                 <span class="ttl-item">
                     <i class="fa-regular fa-newspaper"></i>
                     News
@@ -113,10 +115,10 @@
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
             </a>
 
-            <a href="./perfil.html" class="items text-dark items-arrow">
+            <a href="#" class="items text-dark items-arrow">
                 <span class="ttl-item">
                     <i class="fa-regular fa-star"></i>
-                    Perfil
+                    Discover
                 </span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
             </a>
@@ -126,6 +128,7 @@
                     <i class="fa-solid fa-ellipsis"></i>
                     Mais
                 </span>
+                <i class="fa-solid fa-chevron-right fa-xs"></i>
             </a>
 
             <div class="alterar-modo items">
@@ -133,15 +136,16 @@
                     <span class="action">
                         <input type="checkbox" name="" id="light">
                         <i class="fa-solid fa-circle-half-stroke text-dark"></i>
-                        <p class="ttl-item text-dark" id="mudar-nome" onclick="alterarTexto()">Modo Claro</p>
+                        <p class="ttl-item text-dark" id="mudar-nome" onclick="ChangeTheme()">Modo Claro</p>
                     </span>
-
+                    
                 </label>
                 </input>
 
         </li>
 
     </nav>
+
 
     <main class="main">
 
@@ -208,7 +212,8 @@
 
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="ChangeThemeComunity.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
