@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0;
+    background-color: #011A40;
+}
+.login{
+    margin-top: 25%;
+    margin-bottom: 20%;
+    color: white;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.Painel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c2c54;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.54);
+    height: 80%;
+    width: 30%;
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    outline: none;
+    height: 30px;
+}
+
+button {
+    background-color: #3f7fff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.Label{
+ padding-top: 5px;
+}
+button:hover {
+    background-color:#3f72d7 ;
+}
+::placeholder
+{
+    color: white;
+}
+.dados
+{
+    border: none;
+    border-bottom: solid black;
+    background-color: #1c2c54;
+}
+.labelcheck{
+    display: flex;
+    justify-content: space-around;
+}
+#Checkbox
+{
+    
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+    width: 5%;
+    height: 18px;
+
+}
+.span{
+    color:#DF53AE;
+    margin-left: 5px;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Enviar{
+    width: 50%;
+}
+.pai{
+    display: flex;
+    flex-direction: row;
+    
+}
+.section1{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   gap: 20px;
+
+}
+.imagem{
+    height: 60%;
+    width: 30%;
+}
+.Cadastre-se{
+margin-top: 25%;
+margin-bottom: 1%;
+}
+p{
+    color: white;
+}
