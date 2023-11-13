@@ -1,41 +1,42 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
 }
 
-body{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-max-height: 100vh;
-background-color:  #1A1A1C;;
-color: white;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 100vh;
+    background-color: #1A1A1C;
+    ;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#chatmain{
+
+#chatmain {
     z-index: 8;
     margin: 7px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
-.chat-top{
 
-}
-.username{
+.chat-top {}
+
+.username {
     font-size: 16px;
 }
-.arrow{
 
-}
-.imgs{
+.arrow {}
+
+.imgs {
     display: flex;
     flex-direction: column;
-
-
 }
-#message-input{
+
+#message-input {
     color: white;
     background-color: transparent;
     outline: none;
@@ -46,154 +47,227 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
     margin-right: 7px;
 }
-.left{
+
+.left {
     height: 100vh;
 
     width: 200px;
     display: flex;
     background-color: 242426;
-    
+
 }
-.title-left{
+
+.title-left {
     font-size: 16px;
     text-align: center;
     padding: 5px 0px;
 }
-.imgs{
-    margin: 10px;
+
+.imgs {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
-.img{
+
+/* Estlizacao das barras de rolagems */
+#chat-messages::-webkit-scrollbar {
+    width: 5px;
+    /* Largura da barra de rolagem */
+}
+
+.imgs::-webkit-scrollbar-thumb {
+    background-color: #88888800;
+    /* Cor do polegar (parte que você arrasta) */
+    border-radius: 6px;
+    /* Cantos arredondados do polegar */
+}
+
+.imgs::-webkit-scrollbar-track {
+    background-color: #222222;
+    /* Cor de fundo da barra de rolagem */
+}
+
+.imgs::-webkit-scrollbar {
+    width: 5px;
+    /* Largura da barra de rolagem */
+}
+
+.right::-webkit-scrollbar {
+    width: 5px;
+}
+
+.childdivright::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* ------------------------------------- */
+.img {
     border-radius: 50%;
     padding: 4px;
 }
-.right{
+
+.childdivright {
+    overflow-y: auto;
+}
+
+.right {
     padding: 10px 0;
-    background-color:#222222;
-    width: 300px;
-
+    background-color: #1e1d1d;
+    width: 200px;
+    overflow-y: auto;
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
-
     justify-content: center;
-height: 100vh;
+    height: 100vh;
     align-items: center;
 
 }
 
-a{
+a {
     list-style-type: none;
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.nome-perfil:hover{
-color: rgba(255, 255, 255, 0.602);
+
+.nome-perfil:hover {
+    color: rgba(255, 255, 255, 0.602);
 }
-#chat-messages{
-margin: 40px;
-background-color: #1A1A1C;
-z-index: -10;
+
+#chat-messages {
+    margin: 40px;
+    background-color: #1A1A1C;
+    overflow-y: auto;
+    height: 100vh;
 
 }
-.complete{
+
+.complete {
     display: flex;
     align-items: center;
 }
-.msg{
+
+.msg {
     display: flex;
     font-size: 14px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-span{
+
+span {
     margin-top: 7%;
 
 }
-.h1{
+
+.h1 {
     color: white;
 }
-.user-friends{
 
+.user-friends {
     display: flex;
     justify-content: space-around;
     width: 180px;
-    background-color: rgb(36, 36, 36);
+    background-color: rgb(23, 23, 23);
     align-items: center;
     height: 45px;
     border-radius: 2px;
+    margin: 15px;
     color: white;
 
 }
+
 /* ficar ao lado */
-.msgs{
+.msgs {
     align-items: center;
     display: flex;
 }
+
 /* ==== */
-.imgperfil{
+.imgperfil {
     height: 70px;
     width: 70px;
     border-radius: 50%;
     margin-right: 3%;
 }
-.user-friends:hover{
+
+.user-friends:hover {
     background-color: rgb(45, 45, 45);
     cursor: pointer;
 }
-.text{
+
+.text {
     background-color: rgb(58, 56, 56);
     width: 100%;
     height: 80px;
     z-index: -6;
     display: flex;
     justify-self: center;
-    
+
 }
-#chat-container{
-   display: flex;
-      flex-direction: column;
-  
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
 }
-.p-img{
+
+.p-img {
     text-align: center;
     color: rgba(255, 255, 255, 0.436);
 }
-.namediv{
+
+.namediv {
     background-color: #1A1A1C;
     padding: 10px;
     text-align: center;
 }
+
 /* users name */
-#user1{
+#user1 {
     margin-left: 2%;
     color: #DD57FF;
 }
-#user2{
+
+#user2 {
     color: greenyellow;
 }
-#user3{
-color: red;
+
+#user3 {
+    color: red;
 }
-#user4{
-color: #0066FF;
+
+#user4 {
+    color: #0066FF;
 }
-#user5{
-color: #FFC703;
+
+#user5 {
+    color: #FFC703;
 }
-#user6{
-color: #F800C6;
+
+#user6 {
+    color: #F800C6;
 }
-#user7{
-color: #0066FF;
+
+#user7 {
+    color: #0066FF;
 }
-#user1, #user2,#user3,#user4,#user5,#user6,#user7{
+
+#user1,
+#user2,
+#user3,
+#user4,
+#user5,
+#user6,
+#user7 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
 }
+
 /* ------- */
