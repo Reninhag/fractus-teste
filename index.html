@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/66cb621fdc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./css/resetvar.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Fractus | Sua comunidade de jogos</title>
@@ -65,7 +64,6 @@
                 </div> -->
 
     </header>
-
     <nav class="navegacao">
         <span class="logo-nav">
             <span>
@@ -107,7 +105,7 @@
                 Loja
             </a>
 
-            <a href="#" class="items text-dark items-arrow">
+            <a href="./news.html" class="items text-dark items-arrow">
                 <span class="ttl-item">
                     <i class="fa-regular fa-newspaper"></i>
                     News
@@ -115,10 +113,10 @@
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
             </a>
 
-            <a href="#" class="items text-dark items-arrow">
+            <a href="./perfil.html" class="items text-dark items-arrow">
                 <span class="ttl-item">
                     <i class="fa-regular fa-star"></i>
-                    Discover
+                    Perfil
                 </span>
                 <i class="fa-solid fa-chevron-right fa-xs"></i>
             </a>
@@ -128,7 +126,6 @@
                     <i class="fa-solid fa-ellipsis"></i>
                     Mais
                 </span>
-                <i class="fa-solid fa-chevron-right fa-xs"></i>
             </a>
 
             <div class="alterar-modo items">
@@ -136,16 +133,15 @@
                     <span class="action">
                         <input type="checkbox" name="" id="light">
                         <i class="fa-solid fa-circle-half-stroke text-dark"></i>
-                        <p class="ttl-item text-dark" id="mudar-nome" onclick="ChangeTheme()">Modo Claro</p>
+                        <p class="ttl-item text-dark" id="mudar-nome" onclick="alterarTexto()">Modo Claro</p>
                     </span>
-                    
+
                 </label>
                 </input>
 
         </li>
 
     </nav>
-
 
     <main class="main">
 
@@ -172,26 +168,28 @@
         <div class="divp1">
             <p class="pdiv">
                 Com o <strong>Fractus</strong> você pode ver as principais notícias do mundo dos games, Avaliar jogos do
-                seu cotidiano, Conversar em nossos chats sobre seus jogos favoritos e Muito mais!
+                seu cotidiano, Conversar em nossos chats sobre seus jogos favoritos, ser rankeado entre seus amigos e Muito mais!
             </p>
-            <img src="flip.png" alt="img">
+            <img src="assets/galinhastardewvalley.png" width="300px" height="350px" alt="img">
         </div>
     </div>
 
     <div id="div2" class="section2">
         <h1 class="title-div2">Comunidade</h1>
         <div class="divp2">
-            <p class=" pdiv">Participe de uma comunidade ativa e organizada que esta sempre por dentro das novidades.
+            <img class="minepig" src="assets/minecraftoig.png" alt="img" height="250px" width="280px">
+            <p class=" pdiv2">Participe de uma comunidade ativa e organizada que esta sempre por dentro das novidades no mundo dos games.
             </p>
-            <img src="flip.png" alt="img" height="300px" width="300px">
         </div>
     </div>
     <div id="div3" class="section3">
         <h1 class="title-div3">Faça Parte</h1>
         <div class="divp3">
-            <p class="pdiv">Faça parte de nós! Cadastre-se no Fractus e entre para nossa comunidade!</p>
-            <img src="flip.png" alt="img" height="300px" width="300px">
-
+            <div class="childdiv3">
+                <p class="pdiv3">Faça parte de nós! Cadastre-se no Fractus e entre para nossa comunidade!</p>
+                <a href="cadastro.html"><button class="cadastrobtn">Cadastre-se</button></a>
+            </div>
+            <img class="Toad" src="assets/Toad.webp" alt="img" height="350px" width="230px">
         </div>
     </div>
 
@@ -212,8 +210,7 @@
 
     </footer>
 
-    <script src="ChangeThemeComunity.js"></script>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
