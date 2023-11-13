@@ -191,6 +191,7 @@ ul{
 /*Box model stuff*/
     padding: 20px 10px 20px 20px;
     background-color: var(--Cor-Terciaria);
+    height: 100vh;
 }
 .logo-nav {
 /*Display stuff*/
