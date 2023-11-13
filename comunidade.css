@@ -135,6 +135,7 @@ section {
     padding: 3% 5%;
     background-color: var(--Cor-Secundaria);
     font-size: 1rem;
+    background-image: url(assets/poster2.jpg);
 }
 
 .ttl-h2 h2 {
