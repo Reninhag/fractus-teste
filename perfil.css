@@ -190,7 +190,7 @@ ul{
 .navegacao {
 /*Box model stuff*/
     padding: 20px 10px 20px 20px;
-    background-color: var(--Cor-Terciaria);
+    background-color: #f00;
     height: 100vh;
 }
 .logo-nav {
