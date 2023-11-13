@@ -5,7 +5,7 @@
   outline: none;
 }
 body {
-  background-image: url("file:///C:/Users/Micro/Desktop/stardew%20valley.jpg");
+  background-image: src(imgs/stardew);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100vw;
