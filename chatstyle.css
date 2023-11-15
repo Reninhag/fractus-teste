@@ -31,6 +31,11 @@ body {
 
 .arrow {}
 
+.buttoncomu {
+    border: ;
+    background-color: transparent;
+}
+
 .imgs {
     display: flex;
     flex-direction: column;
@@ -109,6 +114,10 @@ body::-webkit-scrollbar {
 .img {
     border-radius: 50%;
     padding: 4px;
+}
+
+.borda {
+    border: 3px solid rgb(134, 66, 189);
 }
 
 .childdivright {
