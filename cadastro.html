@@ -1,79 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastrostyle.css">
-    <title>Fractus| Cadastre-se
-    </title>
-  </head>
 
-  <body>
-    <div class="container">
-      <section class="container2">
-        <form action="">
-          <h1 class="h1">Cadastre-se</h1>
-          <div class="parent">
-            <div class="section1">
-              <label for="name"
-                ><iconify-icon
-                  class="icon"
-                  icon="ph:pencil-simple"
-                  style="color: white"
-                ></iconify-icon
-              ></label>
-              <label for="email"
-                ><iconify-icon
-                  class="icon"
-                  icon="icon-park-solid:people"
-                  style="color: white"
-                ></iconify-icon
-              ></label>
-              <label for="password"
-                ><iconify-icon
-                  class="icon"
-                  icon="streamline:padlock-square-1-solid"
-                  style="color: white"
-                ></iconify-icon
-              ></label>
-              <label for="confirmpassword"
-                ><iconify-icon
-                  class="icon"
-                  icon="streamline:padlock-square-1-solid"
-                  style="color: white"
-                ></iconify-icon
-              ></label>
-            </div>
-            <div class="section2">
-              <input type="text" name="name" id="name" placeholder="Username" />
-              <input type="email" name="email" id="email" placeholder="E-mail" />
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Senha"
-              />
-              <input
-                type="password"
-                name="confirmpassword"
-                id="confirmpassword"
-                placeholder="Confirmar senha"
-              />
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastrostyle.css">
+  <title>Fractus| Cadastre-se
+  </title>
+</head>
+
+<body>
+  <div id="container" class="container">
+    <section class="container2">
+      <div class="form">
+        <h1 class="h1">Cadastre-se</h1>
+        <div class="parent">
+          <div class="section1">
+            <label for="name"><iconify-icon class="icon" icon="ph:pencil-simple"
+                style="color: white"></iconify-icon></label>
+            <label for="email"><iconify-icon class="icon" icon="icon-park-solid:people"
+                style="color: white"></iconify-icon></label>
+            <label for="password"><iconify-icon class="icon" icon="streamline:padlock-square-1-solid"
+                style="color: white"></iconify-icon></label>
+            <label for="confirmpassword"><iconify-icon class="icon" icon="streamline:padlock-square-1-solid"
+                style="color: white"></iconify-icon></label>
           </div>
-          <div class="toge">
-            <input class="check" type="checkbox" name="checkbox" id="checkbox" />
-            <label for="checkbox"
-              >Li e aceito os <span>Termos de Uso</span></label>
+          <div class="section2">
+            <input type="text" name="name" id="name" placeholder="Username" required autocomplete="off" />
+            <input type="email" name="email" id="email" placeholder="E-mail" required autocomplete="off" />
+            <input type="password" name="password" id="password" placeholder="Senha" required />
+            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirmar senha" required />
           </div>
-          <button class="btn" onclick="Validar()">
-            <p>Enviar</p>
-          </button>
-        </form>
-      </section>
-      <p class="phref">Já possui uma conta? <a href="login.html"> <span> faça login</span></a></p>
-    </div>
-    <script src="scriptcadastro.js"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  </body>
+        </div>
+        <div class="toge">
+          <p id="p-confirm" class="p-confirm"></p>
+          <input class="check" type="checkbox" name="checkbox" id="checkbox" />
+          <label for="checkbox">Li e aceito os <span>Termos de Uso</span></label>
+        </div>
+        <button class="btn" onclick="validarSenha()">
+          Enviar
+        </button>
+      </div>
+    </section>
+    <p class="phref">Já possui uma conta? <a href="login.html"> <span> faça login</span></a></p>
+  </div>
+  <div id="sucesslogin" class="sucesslogin">
+    <h2 class="h1-sucess">Seja Bem vindo(a) <br>
+      <p id="user"></p>
+    </h2>
+    <p class="p-sucess">Ficamos felizes em te receber como <br> parte do time!
+      nao perca tempo e <br> explore nossa <span>Comunidade</span>
+    </p>
+    <p class="p-sucess">Nos conte um pouco mais sobre voce! <span>edite seu perfil</span></p>
+  </div>
+  <script src="scriptcadastro.js"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+
 </html>
