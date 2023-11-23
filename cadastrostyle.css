@@ -4,46 +4,50 @@
   text-decoration: none;
   outline: none;
 }
+
 body {
   background-image: url(imgs/stardew.png);
   background-repeat: no-repeat;
   background-attachment: relative;
   background-size: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  flex-direction: column;
 }
-.container2{
+
+.container2 {
   display: flex;
 }
+
 .container {
   width: 25%;
   height: 55%;
   margin-top: 7%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.154);
+  background-color: rgba(0, 0, 0, 0.223);
   border-radius: 22px;
 }
+
 .section1 {
   display: flex;
   flex-direction: column;
   padding-top: 8%;
   gap: 30px;
 }
+
 .h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   padding-top: 7%;
   font-size: 35px;
 }
+
 input {
   height: 32px;
-  margin-left: 5%;  
+  margin-left: 5%;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid #0650be;
@@ -51,9 +55,11 @@ input {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 ::placeholder {
   color: white;
 }
+
 .parent {
   display: flex;
   flex-direction: row;
@@ -62,26 +68,30 @@ input {
   justify-content: center;
   align-items: center;
 }
+
 .section2 {
   padding: 0;
   margin: 0;
   gap: 5px;
 }
-.check{
+
+.check {
   height: 13px;
   margin: 0;
   padding: 0;
 }
+
 .toge {
   margin-top: 5%;
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
   display: inline-block;
-width: 90%;
-justify-content: center;
-text-align: center;
+  width: 90%;
+  justify-content: center;
+  text-align: center;
 }
+
 .btn {
   width: 90px;
   border-radius: 4px;
@@ -93,21 +103,59 @@ text-align: center;
   border: none;
 }
 
-form {
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
 span {
-  color: palevioletred;
+  color: rgb(238, 126, 164);
   font-weight: 550;
   padding: 1px;
-cursor: pointer;
+  cursor: pointer;
 }
-.phref{
+
+.phref {
   margin-top: 8%;
   margin-bottom: 1%;
   display: flex;
   align-self: center;
+}
+
+/* 
+sucesslogin
+ */
+.sucesslogin {
+  margin-top: 10%;
+  padding: 15px;
+  display: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  max-width: 300px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.367);
+  border-radius: 6%;
+  z-index: 20;
+  padding-top: 3%;
+}
+
+
+.p-sucess {
+  margin-top: 10%;
+  line-height: 23px;
+}
+
+.h1-sucess {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.p-confirm {
+  padding: 2%;
+
 }
