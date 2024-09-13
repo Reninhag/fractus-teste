@@ -17,7 +17,7 @@ O **Fractus** é uma comunidade de games ativa e moderna que tem por objetivo re
 
 @LiceJacob
 
-@johnnyFR26
+@PedroArtin
 
 @Reninhag
 
