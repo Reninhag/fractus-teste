@@ -6,13 +6,10 @@ O **Fractus** é uma comunidade de games ativa e moderna que tem por objetivo re
 
  De uma olhada em [nosso projeto!](https://reninhag.github.io/fractus-teste)
 
- ## 📚 Principais tecnologias usadas
+ ## 📚 Documentação sobre futuro do projeto
+ [Documentação](https://1drv.ms/w/c/cd4825a2e116d33a/EYfho9lla4lGqBQtPT739HUBN4HcjozKSoS0ShbvJOHwzA?e=CYotlO)
  
-  - HTML
-  - CSS
-  - JavaScript
-  - Node.js
-
+  
 ## Nosso time
 
 @LiceJacob
